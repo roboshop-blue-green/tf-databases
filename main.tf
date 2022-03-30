@@ -15,8 +15,8 @@ module "mysql" {
   ENV    = var.ENV
 }
 
-//module "redis" {
-//  source = "git::https://github.com/roboshop-blue-green/tf-db-module.git//redis"
-//  ENV    = var.ENV
-//}
-//
+module "redis" {
+  source = "git::https://github.com/roboshop-blue-green/tf-db-module.git//redis"
+  ENV    = var.ENV
+}
+
