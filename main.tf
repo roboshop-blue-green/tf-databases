@@ -10,11 +10,11 @@ module "rabbitmq" {
   RABBITMQ_INSTANCE_TYPE = var.RABBITMQ_INSTANCE_TYPE
 }
 
-//module "mysql" {
-//  source = "git::https://github.com/roboshop-blue-green/tf-db-module.git//mysql"
-//  ENV    = var.ENV
-//}
-//
+module "mysql" {
+  source = "git::https://github.com/roboshop-blue-green/tf-db-module.git//mysql"
+  ENV    = var.ENV
+}
+
 //module "redis" {
 //  source = "git::https://github.com/roboshop-blue-green/tf-db-module.git//redis"
 //  ENV    = var.ENV
